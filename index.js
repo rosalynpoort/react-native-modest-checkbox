@@ -13,7 +13,7 @@ class CheckBox extends Component {
 
   render () {
     return (
-      <TouchableOpacity onPress={this._handleToggleChecked} underlayColor={this.props.underlayColor} style={styles.flexContainer}>
+      <TouchableOpacity onPress={this._handleToggleChecked} underlayColor={this.props.underlayColor} style={styles.flexContainer} activeOpacity={this.props.activeOpacity}>
         <View style={this.props.containerStyle || styles.container}>
           {this.props.labelBefore ? <Label labelStyle={this.props.labelStyle} numberOfLabelLines={this.props.numberOfLabelLines} label={this.props.label} /> : null }
 
